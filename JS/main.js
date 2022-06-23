@@ -6,10 +6,7 @@ var user =[
 ]
 
 //GLOBAL VARIABLES
-var actualUser 
 var actualBalance
-var actualPassword
-var actualPhone
 
 //VARIABLES TO BUTTONS
 var logIn1 = document.getElementById('logIn1')
@@ -33,9 +30,6 @@ var withdraw = document.getElementById('withdrawButton')
 
 var acceptWithdraw = document.getElementById('acceptWith')
 var acceptDeposit = document.getElementById('acceptDepo')
-
-//OTHER VARIABLES
-var error1 = document.getElementById('error1')
 
 //PAGE MOVEMENT
 logIn1.addEventListener('click', function logInwU(){
@@ -76,7 +70,7 @@ backButton3.addEventListener('click', function back3(){
 })
 backButton4.addEventListener('click', function back4(){
     containerHelp.classList.add('none')
-    containerUser.classList.remove('none')
+    containerWelcome.classList.remove('none')
 })
 logOutButton.addEventListener('click', function logOut(){
     containerUser.classList.add('none')
