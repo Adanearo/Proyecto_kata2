@@ -1,0 +1,136 @@
+/* GENRAL STYLES */
+p, h1, h2, h3{
+    margin: 0;
+}
+.background{
+    display: flex;
+    background-color: #91181d;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+/* BOX STYLES */
+.outerBox{
+    display: flex;
+    outline: 2px solid #741417; 
+    background-color: #3c3f45;
+    padding: 2%;
+}
+.container-fluid{
+    outline: 2px solid #33353a; 
+    background-color: #3c465c;
+    width: 60vw;
+    margin: 2%;
+    padding: 5% 2%;
+    justify-content: center;
+    align-items: center;
+}
+.row{
+    margin: 0 0.1%;
+}
+.col-5, .col-2, .col-8, .col-4, .col-1, .col-6, .col-3{
+    /* outline: 1px solid white; */
+    margin: 0.5% 0;
+    padding: 0;
+}
+.col-4{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.col-12, .col-8{
+    margin: 1% 0;
+    /* outline: 1px solid white; */
+    text-align: center;
+}
+/* BUTTON STYLES */
+.btn{
+    font-size: 1.125vw;
+    text-transform: uppercase;
+    font-family: 'Signika Negative', sans-serif;
+    color: #243a5c;
+}
+    .btnStartL{
+    margin-right: 1%;
+    background-color: white;
+    text-align: start;
+    }
+     .fa-arrow-left, .fa-arrow-up{
+        padding-left: 5%;
+     }
+     .fa-arrow-right, .fa-arrow-down, .fa-eye, .fa-check{
+        padding-right: 5%;
+     }
+     .fa-check{
+        padding-left: 5%;
+        padding-right: 18%;
+     }
+    .btnStartR{
+    margin-left: 1%;
+    background-color: white;
+    text-align: end;
+    }
+/* TEXT STYLES */
+    .atmTitle1{
+        font-size: 3.5vw;
+        font-weight: 200;
+        font-family: 'Signika Negative', sans-serif;
+    }
+    .atmWelcome{
+        font-size: 2vw;
+        font-weight: 200;
+        font-family: 'Signika Negative', sans-serif;
+    }
+    .atmTitle{
+        font-size: 7.5vw;
+        font-weight: 900;
+        font-family: 'Signika Negative', sans-serif;
+    }
+    .atmHelp{
+        font-size: 1.5vw;
+        font-family: 'Signika Negative', sans-serif;
+        text-align: justify;
+    }
+.passForm, .amount{
+    text-align: center;
+    font-size: 1.125vw;
+    font-family: 'Signika Negative', sans-serif;
+    color: #243a5c;
+}
+.text1{
+    text-align: center;
+    font-size: 1.125vw;
+    color: white;
+    font-weight: 500;
+}
+#withdrawnAmount, #newBalanceWith, #depositedAmount, #newBalanceDepo, #totalBalance{
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 1.3rem;
+}
+.userNames{
+    font-size: 1vw;
+}
+.userName, .phoneNumber{
+    font-size: 1.7vw;
+}
+/* OTHER STYLES */
+.userPic{
+    height: 10vw;
+    border-radius: 10%;
+}
+.amount{
+    margin:3% 0;
+}
+.footer{
+    position: relative;
+    left: 43%;
+    font-size: 1vw;
+    margin: 0;
+    padding: 0;
+    color: white;
+    text-align: end;
+}
+.none{
+    display: none;
+}

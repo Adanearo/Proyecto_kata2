@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- STYLESEETS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="./CSS/styles.css">
+    <!-- FONTS -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@700&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/5868c211fa.js" crossorigin="anonymous"></script>   
+    <title>ATM</title>
+</head>
+<body class="background">
+        <!-- WELCOME PAGE -->
+    <div class="outerBox rounded-3 position-absolute top-50 start-50 translate-middle " id="containerWelcome">
+        <div class="container-fluid rounded">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="atmTitle1">Izaid's bank</h2>
+                    <h1 class="atmTitle">ATM</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <p class="atmWelcome">Welcome to our bank, the best bank in the world! <i class="fa-solid fa-earth-americas"></i></p>
+                    <p class="atmWelcome">Please select an option</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-5">
+                    <button type="button" id="logIn1" class="btn-lg btn rounded-0 btnStartL form-control rounded-end"><i class="fa-solid fa-arrow-right"></i> user and password</button>
+                </div>
+                <div class="col-2"></div>
+                <div class="col-5">
+                    <button type="button" id="logIn2" class="btn-lg btn rounded-0 btnStartR form-control float-end rounded-start">phone and password <i class="fa-solid fa-arrow-left"></i></button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-5">
+                    <button type="button" id="lenguage" class="btn-lg btn rounded-0 btnStartL form-control rounded-end"><i class="fa-solid fa-arrow-right"></i> lenguage</button>
+                </div>
+                <div class="col-2"></div>
+                <div class="col-5">
+                    <button type="button" id="help1" class="btn-lg btn rounded-0 btnStartR form-control float-end rounded-start">help? <i class="fa-solid fa-arrow-left"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+        <!-- LOG IN WITH USER AND PASSWORD PAGE -->
+    <div class="outerBox  rounded-3 position-absolute top-50 start-50 translate-middle none" id="containerLogin1">
+        <div class="container-fluid rounded">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="atmTitle1">Izaid's bank</h2>
+                    <h1 class="atmTitle">ATM</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <p class="atmWelcome">Welcome to our bank, the best bank in the world! <i class="fa-solid fa-earth-americas"></i></p>
+                    <p class="atmWelcome">Please provide your credentials</p>
+                </div>
+            </div>
+            <div class="row none" id="error1">
+                <div class="col-12">
+                    <p class="text1">Invalid credentials. Please try again!</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4"></div>
+                <div class="col-4">
+                    <input type="user" id="inputUser" class="form-control passForm" aria-describedby="userHelpInline" placeholder="USERNAME">
+                </div>
+                <div class="col-4"></div>
+            </div>
+            <div class="row">
+                <div class="col-4"></div>
+                <div class="col-4">
+                    <input type="password" id="inputPassword1" class="form-control passForm" aria-describedby="passwordHelpInline" placeholder="PASSWORD">
+                </div>
+                <div class="col-4"></div>
+            </div>
+            <div class="row">
+                <div class="col-5">
+                    <button type="button" id="back1" class="btn-lg btn rounded-0 btnStartL form-control rounded-end"><i class="fa-solid fa-arrow-right"></i> back</button>
+                </div>
+                <div class="col-2"></div>
+                <div class="col-5">
+                    <button type="button" id="logInB1" class="btn-lg btn rounded-0 btnStartR form-control float-end rounded-start">Log In <i class="fa-solid fa-arrow-up"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+        <!-- LOG IN WITH PHONE AND PASSWORD PAGE -->
+    <div class="outerBox  rounded-3 position-absolute top-50 start-50 translate-middle none"  id="containerLogin2">
+        <div class="container-fluid rounded">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="atmTitle1">Izaid's</h2>
+                    <h1 class="atmTitle">ATM</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <p class="atmWelcome">Welcome to our bank, the best bank in the world! <i class="fa-solid fa-earth-americas"></i></p>
+                    <p class="atmWelcome">Please provide your credentials</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4"></div>
+                <div class="col-4">
+                    <input type="user" id="inputPhone" class="form-control passForm" aria-describedby="phoneHelpInline" placeholder="PHONE NUMBER">
+                </div>
+                <div class="col-4"></div>
+            </div>
+            <div class="row">
+                <div class="col-4"></div>
+                <div class="col-4">
+                    <input type="password" id="inputPassword2" class="form-control passForm" aria-describedby="passwordHelpInline" placeholder="PASSWORD">
+                </div>
+                <div class="col-4"></div>
+            </div>
+            <div class="row">
+                <div class="col-5">
+                    <button type="button" id="back2" class="btn-lg btn rounded-0 btnStartL form-control rounded-end"><i class="fa-solid fa-arrow-right"></i> back</button>
+                </div>
+                <div class="col-2"></div>
+                <div class="col-5">
+                    <button type="button" id="logInB2" class="btn-lg btn rounded-0 btnStartR form-control float-end rounded-start">Log In <i class="fa-solid fa-arrow-up"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+        <!-- LENGUAGE PAGE -->
+    <div class="outerBox  rounded-3 position-absolute top-50 start-50 translate-middle none" id="containerLenguage">
+        <div class="container-fluid rounded" >
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="atmTitle1">Sorry</h2>
+                    <h1 class="atmTitle">WIP!!!</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <p class="atmWelcome">Here in Izaid's bank, we work to give you the best experience in the world  <i class="fa-solid fa-earth-americas"></i></p>
+                    <p class="atmWelcome">Please be patient with our translators</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4"></div>
+                <div class="col-4">
+                    
+                </div>
+                <div class="col-4"></div>
+            </div>
+            <div class="row">
+                <div class="col-4"></div>
+                <div class="col-4">
+                   
+                </div>
+                <div class="col-4"></div>
+            </div>
+            <div class="row">
+                <div class="col-5">
+                    <button type="button" id="back3" class="btn-lg btn rounded-0 btnStartL form-control rounded-end"><i class="fa-solid fa-arrow-right"></i> back</button>
+                </div>
+                <div class="col-2"></div>
+                <div class="col-5">
+                    <button type="button" id="help2" class="btn-lg btn rounded-0 btnStartR form-control float-end rounded-start">help? <i class="fa-solid fa-arrow-left"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+        <!-- HELP PAGE -->
+    <div class="outerBox  rounded-3 position-absolute top-50 start-50 translate-middle none" id="containerHelp">
+        <div class="container-fluid rounded">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="atmTitle1">Izaid's bank, the best bank in the world  <i class="fa-solid fa-earth-americas"></i></h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <p class="atmWelcome">This are the instrucions fot using this ATM.</p>
+                    <p class="atmHelp"><i class="fa-solid fa-check"></i> If you have trouble using this ATM please conctact one of our branch employees.</p>
+                    <p class="atmHelp"><i class="fa-solid fa-check"></i> You can use your phonenumber or username and password to log in.</p>
+                    <p class="atmHelp"><i class="fa-solid fa-check"></i> The log in forms are caps-setitive so be carefull.</p>
+                    <p class="atmHelp"><i class="fa-solid fa-check"></i> You can check your balance, deposit or withdraw money. Any other operation it's avilable in our branch offices.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4"></div>
+                <div class="col-4">
+                    
+                </div>
+                <div class="col-4"></div>
+            </div>
+            <div class="row">
+                <div class="col-4"></div>
+                <div class="col-4">
+                   
+                </div>
+                <div class="col-4"></div>
+            </div>
+            <div class="row">
+                <div class="col-5">
+                    <button type="button" id="back4" class="btn-lg btn rounded-0 btnStartL form-control rounded-end"><i class="fa-solid fa-arrow-right"></i> back</button>
+                </div>
+                <div class="col-2"></div>
+                <div class="col-5">
+                </div>
+            </div>
+        </div>
+    </div>
+        <!-- USER PAGE -->
+    <div class="outerBox rounded-3 position-absolute top-50 start-50 translate-middle none" id="containerUser">
+        <div class="container-fluid rounded">
+            <div class="row">
+                <div class="col-12">
+                    <p class="atmWelcome">Welcome to Izaid's bank</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="col-4">
+                    <img class="userPic none" id="userPicA" src="./RESOURCES/userPic_A.jpg"/> <!-- CHANGE USER PIC USING JS -->
+                    <img class="userPic none" id="userPicB" src="./RESOURCES/userPic_B.jpg"/>
+                    <img class="userPic none" id="userPicC" src="./RESOURCES/userPic_C.jpg"/>
+                </div>
+                <div class="col-1"></div>
+                <div class="col-6">
+                    <div class="row userNames">
+                        <div class="col-12">
+                        USERNAME: <p class="userName" id="userName">USERNAME</p> <!-- CHANGE USING JS -->
+                        </div>
+                        <div class="col-12">
+                        PHONE NUMBER: <p class="phoneNumber" id="phoneNumber">PHONE NUMBER</p> <!-- CHANGE USING JS -->
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4"></div>
+                        <div class="col-4">
+                            <button type="button" id="logOut" class="btn rounded btnStartL form-control"><i class="fa-solid fa-arrow-down"></i> log out</button>
+                        </div>
+                        <div class="col-4"></div>
+                    </div>
+                </div>
+            </div>
+        <!-- OPERATION SECTION -->
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="col-4">
+                     <!-- WITHDRAW -->
+                    <div class="none" id="withdrawBox">
+                        <p class="text1"> Enter the amount to withdraw: </p>
+                        <input type="number" class="form-control amount" id="withdrawAmount" placeholder="Type the amount">
+                        <button type="button" id="acceptWith" class="btn-sm btn rounded btnStartL form-control"><i class="fa-solid fa-check"></i> accept</button>
+                        <div class="none" id="withdrawBalance">
+                            <p class="text1" id="withdrawnAmountT">Withdrawn amount:</p>
+                            <p id="withdrawnAmount"></p>
+                            <p class="text1">New balance:</p>
+                            <p id="newBalanceWith"></p>
+                        </div>        
+                    </div>
+                    <!-- DEPOSIT -->
+                    <div class="none" id="depositBox">
+                        <p class="text1"> Enter the amount to deposit: </p>
+                        <input type="number" class="form-control amount" id="depositAmount" placeholder="Type the amount">
+                        <button type="button" id="acceptDepo" class="btn-sm btn rounded btnStartL form-control"><i class="fa-solid fa-check"></i> accept</button>
+                        <div class="none" id="depositBalance">
+                            <p class="text1" id="depositAmountT">Deposited amount:</p>
+                            <p id="depositedAmount"></p>
+                            <p class="text1">New balance:</p>
+                            <p id="newBalanceDepo"></p>
+                        </div>
+                    </div>
+                    <!-- BALANCE -->
+                    <div class="none" id="balanceBox">
+                        <p class="text1">Actual balance:</p>
+                        <p id="totalBalance"></p>
+                    </div>
+                </div>
+                <div class="col-1"></div>
+                <div class="col-6">
+                    <div class="row">
+                        <div class="col-2"></div>
+                        <div class="col-8">
+                            <button type="button" id="withdrawButton" class="btn rounded btnStartL form-control"><i class="fa-solid fa-eye"></i> withdraw</button>
+                        </div>
+                        <div class="col-2"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-2"></div>
+                        <div class="col-8">
+                            <button type="button" id="depositButton" class="btn rounded btnStartL form-control"><i class="fa-solid fa-eye"></i> deposit</button>
+                        </div>
+                        <div class="col-2"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-2"></div>
+                        <div class="col-8">
+                            <button type="button" id="balanceButton" class="btn rounded btnStartL form-control"><i class="fa-solid fa-eye"></i> balance</button>
+                        </div>
+                        <div class="col-2"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3">
+                    <button type="button" id="help3" class="btn-lg btn rounded-0 btnStartL form-control rounded-end"><i class="fa-solid fa-arrow-right"></i> help?</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div>
+            <p class="by">© 2022 Izaid Ramos</p>
+            <p class="by">Powered by HTML, CSS & JS</p>
+        </div>
+    </footer>
+<script src="./JS/main.js"></script>
+</body>
+</html>
